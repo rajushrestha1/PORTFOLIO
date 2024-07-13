@@ -1,16 +1,17 @@
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 const NavBar = () => {
     const [nav, setNav]=useState()
     const links=[
 {
     id :1,
-    link :"Home"
+    link :"home"
 }, 
 {
     id :2,
-    link :"About"
+    link :"about"
 }, 
 {
     id :3,
@@ -18,7 +19,7 @@ const NavBar = () => {
 }, 
 {
     id :4,
-    link :"experience"
+    link :"skill"
 }, 
 {
     id :5,
@@ -28,13 +29,13 @@ const NavBar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 bg-black text-white px-4 fixed">
         <div>
-            <h1 className="text-lg text-slate-300">Raju</h1>
+            <h1 className="text-5xl ml-2  font-bold text-slate-400 hover:text-blue-400">RAJU</h1>
         </div>
         <ul className="hidden md:flex">
             {links.map(({id, link})=>(
                 <li key={id}
-                className="px-4 cursor-pointer capitalize text-slate-500 hover:scale-110 duration-200">
-                    {link}
+                className="px-4 cursor-pointer capitalize text-slate-500 hover:scale-110 duration-200 hover:text-yellow-300">
+                <Link to={link}  smooth={true} spy={true} offset={-100} duration={100} >{link}</Link>
                 </li>
             ))}
         </ul>
@@ -47,7 +48,9 @@ const NavBar = () => {
                 {links.map(({id, link})=>(
                         <li key={id}
                         className="px-4 cursor-pointer capitalize py-6 text-4xl">
-                            {link}
+                                            <Link onClick={()=>setNav(!nav)}
+                                            to={link}  smooth={true} spy={true} offset={-100} duration={500} >{link}</Link>
+
                         </li>
                     ))}
                 </ul>
