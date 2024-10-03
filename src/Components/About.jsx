@@ -7,7 +7,7 @@ const About = () => {
             <p className="text-4xl font-bold inline border-b-4 border-gray-500">About</p>
         </div>
         <p className="w-full">
-        It's me Raju Shrestha from Sindhuli Nepal.
+        Its me Raju Shrestha from Sindhuli Nepal.
              </p>
               <br/>
               <p className="w-full"> I am currently persuing a degree in in Bsc.Csit at Tribhuvan University.
