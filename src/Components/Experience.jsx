@@ -5,6 +5,7 @@ import react from "../Assets/react.png"
 import node from "../Assets/node.png"
 import Mongodb from "../Assets/Mongodb.png"
 import github from "../Assets/github.png"
+import tailwind from "../Assets/tailwind.png"
 const Experience = () => {
   let skill=[
     {
@@ -49,13 +50,19 @@ const Experience = () => {
     title:"GITHUB",
     style:"shadow-gray-500",
   },
+  {
+    id:8,
+    src:tailwind,
+    title:"TAILWIND",
+    style:"shadow-blue-500",
+  },
   ];
   return (
     <div name="skill" className=" text-white bg-gradient-to-b from-gray-800 to-black w-full min-h-full pb-40  md:h-screen lg:pl-44">
       <div className="max-w-screen-lg p-4 max-auto flex flex-col justify-center h-full w-full">
-        <div className="pb-8">
-               <p className="text-4xl font-bold inline border-b-4 border-gray-500">Skills</p>
-               <p className="py-6">Check out my skills here</p>
+        <div className="pb-8 items-center justify-center flex">
+               <p className="text-4xl font-bold inline border-b-4 border-gray-500 text-yellow-500 mt-32">Skills</p>
+              
         </div>
         <div className="w-full  grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
        {skill.map(({id,src,title,style})=>

@@ -5,12 +5,12 @@ const ContactME = () => {
       className="w-full md:h-screen pb-40 lg:pl-44 bg-gradient-to-b from-black to-gray-800 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+        <div className="pb-8 items-center justify-center flex">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 text-yellow-500">
             Contact
           </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
+          <p className="py-6 items-center justify-center flex">Submit the form below to get in touch with me</p>
 
         <div className="flex justify-center items-center">
           <form

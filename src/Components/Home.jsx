@@ -1,6 +1,7 @@
 import {Link} from "react-scroll"
 import { TypeAnimation } from 'react-type-animation'
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';const Home = () => {
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+const Home = () => {
   return (
     <div name="home" className='h-screen w-full  lg:pl-44
     bg-gradient-to-b from-black via-black to-gray-800 '>
@@ -9,8 +10,8 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';const Home = () 
             <h1 className='text-4xl md:text-7xl font-bold text-yellow-500 '>
                   <TypeAnimation 
                   sequence={[
-                    "I Design A Website",1000,
-                    "I Am Frontend Developer",1000
+                    "I Am A Web Developer",1000,
+                    "I Am Backend Developer",1000
                   ]}
                   wrapper="span"
                   speed={5}
@@ -23,7 +24,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';const Home = () 
                 great things.
                 </p>
         <div>
-            <Link to="portfolio" smooth duration={500} className='text-white group w-fit m-3 px-5 py-1 flex items-center rounded-full bg-blue-500 hover:bg-white hover:text-blue-400 hover:scale-110 duration-500 cursor-pointer  hover:border-blue-950'>
+            <Link to="portfolio" smooth duration={500} className='text-white group w-fit m-3 px-5 py-1 flex items-center rounded-full bg-blue-500 hover:bg-gray-800 hover:text-white hover:scale-110 duration-500 cursor-pointer  hover:border-blue-950 '>
                 Portfolio
                 <span className='group-hover:rotate-90 duration-500'>
 

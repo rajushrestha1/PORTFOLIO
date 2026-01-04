@@ -32,13 +32,22 @@ const NavBar = () => {
             <h1 className=""><img src='logo1.png' alt='logo' /></h1>
         </div>
         <ul className="hidden md:flex">
-            {links.map(({id, link})=>(
-                <li key={id}
-                className="px-4 cursor-pointer capitalize text-slate-500 hover:scale-110 duration-200 hover:text-yellow-300">
-                <Link to={link}  smooth={true} spy={true} offset={-100} duration={100} >{link}</Link>
-                </li>
-            ))}
-        </ul>
+  {links.map(({id, link}) => (
+    <li key={id} className="relative w-inline-block px-4 cursor-pointer capitalize text-gray-700 hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 transition-colors duration-300">
+      <Link 
+        to={link}  
+        smooth={true} 
+        spy={true} 
+        offset={100} 
+        duration={1000} 
+        className="relative block">
+        {link}
+       
+      </Link>
+    </li>
+  ))}
+</ul>
+
         <div onClick={()=>setNav(!nav)}
         className='cursor-pointer pr-4 z-10 text-slate-300 md:hidden    '>
            {nav? <MenuOpenIcon /> : <MenuIcon />}
